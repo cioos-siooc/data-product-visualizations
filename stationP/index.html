@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+
+<head>
+    <script src="https://d3js.org/d3.v5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-statistics/1.0.1/simple_statistics.js"></script>
+    <!-- <script src="https://d3js.org/d3-array.v2.min.js"></script> -->
+
+    <script src="loadandplot.js"></script>
+    <script src="makebarplot.js"></script>
+    <script src="showprofiles.js"></script>
+    <script src="annualscatter.js"></script>
+
+</head>
+
+<style>
+#barsvg,
+canvas {
+  position: absolute;
+}
+.tooltip {
+  position: absolute;
+  width: 90px;
+  height: 15px;
+  background: #FFF;
+  border: 2px solid #808080;
+  border-radius: 4px;
+  z-index: 10;
+  padding: 10px;
+  font-size: 14px;
+}
+</style>
+
+<body>
+    <div class="bars"></div>
+    <div class="scatter1"></div>
+    <svg id = "barsvg" width="960" height="500"></svg>
+
+
+    <canvas width="960" height="500"></canvas>
+    
+
+    <script>
+        // const months_to_include = [5, 10];
+
+        // const showContours = false; //contours or heatmap
+
+        // //  loaddata(months_to_include,showContours);
+        // load data and plot 0-10 dbar as bars
+        data = loadplotdata()
+        // console.log(data)
+
+        
+    </script>

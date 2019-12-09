@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+  body {
+    font-family: Arial, Helvetica;
+  }
+
+  .highlight {
+    color: #aa2125;
+  }
+
+  .safe {
+
+    /* background: white; */
+    height: 100px;
+    width: 400px;
+    text-align: center;
+    font-size: 80px;
+    color: steelblue;
+    margin-top: 10px;
+  }
+</style>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+ <!-- Load Esri Leaflet from CDN -->
+ <!-- Load Esri Leaflet from CDN -->
+<script src="https://unpkg.com/esri-leaflet@2.2.3/dist/esri-leaflet.js"
+integrity="sha512-YZ6b5bXRVwipfqul5krehD9qlbJzc6KOGXYsDjU9HHXW2gK57xmWl2gU6nAegiErAqFXhygKIsWPKbjLPXVb2g=="
+crossorigin=""></script>
+<!-- <script src="https://unpkg.com/d3-request@1"></script> -->
+
+<script src="https://unpkg.com/topojson@3"></script>
+
+<!-- <script src="geotiff.js/dist/geotiff.bundle.min.js"></script> -->
+<script src="//d3js.org/d3.v5.min.js"></script>
+<script src="loadandplot.js"></script>
+<script src="makeMap.js"></script>
+
+
+<body>
+
+
+    <div id="mapid" style="width: 660px; height: 430px;"></div>
+    <div class="topo-map"></div>
+    <div>
+    <h2 style="padding-left: 100px;">Water Temperature (°C)
+    </h2>
+    <p class="safe" id='temperature'></p>
+
+    <h2 style="padding-left: 200px;">pH
+    </h2>
+    <p class="safe" id='pH'></p>
+    <h2 style="padding-left: 100px;">Calcite Saturation
+    </h2>
+    <p class="safe" id='calciteSat'></p>   
+  </div>
+  <div class="timeseries"></div>
+  
+
+  </body>
