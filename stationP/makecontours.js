@@ -24,13 +24,11 @@ function makeContour(dataset,showContours) {
         .domain(period)
         .range([2 * margin.left, 2 * margin.left + W])
 
-
     
     const svg = d3.select(".contour-chart")
         .append("svg")
         .attr("width", width)
         .attr("height", height);
-
     
 
     const w = W / (years.length + 1);
